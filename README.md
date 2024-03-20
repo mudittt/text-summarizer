@@ -17,11 +17,31 @@ then install the nightly version of pytorch to use pytorch with gpu support on y
 
 ```
 conda install pytorch-nightly::pytorch torchvision torchaudio -c pytorch-nightly
+```
 
-conda install transformers
-conda install sentencepiece
+```
+conda install transformers accelerate sentencepiece
+```
 
+```
 conda install sacrebleu rouge-score py7zr pandas boto3 mypy-boto3-s3 nltk matplotlib notebook uvicorn fastapi python-box 
+```
+```
+conda install protobuf
+```
+
+### Workflows
+```
+
+- Update config.yaml
+- Update params.yaml
+- Update entity
+- Update the configuration manager in src config
+- update the conponents
+- update the pipeline
+- update the main.py
+- update the app.py
+
 ```
 
 
