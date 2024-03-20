@@ -22,3 +22,15 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
+
+
+from textsummarizer.pipeline.data_transformation import DataTransformationTrainingPipeline
+
+try:
+   logger.info(f"\n\n>>>>>> DATA TRANSFORMATION STARTED <<<<<<\n\n") 
+   data_transformation = DataTransformationTrainingPipeline()
+   data_transformation.main()
+   logger.info(f"\n\n>>>>>> DATA TRANSFORMATION COMPLETED <<<<<<\n\n")
+except Exception as e:
+        logger.exception(e)
+        raise e
