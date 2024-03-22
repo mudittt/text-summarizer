@@ -34,3 +34,28 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
+
+
+from textsummarizer.pipeline.model_trainer import ModelTrainerTrainingPipeline
+
+try:
+   logger.info(f"\n\n>>>>>> DATA TRAINER STARTED <<<<<<\n\n") 
+   model_trainer = ModelTrainerTrainingPipeline()
+   model_trainer.main()
+   logger.info(f"\n\n>>>>>> DATA TRAINER COMPLETED <<<<<<\n\n")
+except Exception as e:
+        logger.exception(e)
+        raise e
+
+
+
+from textsummarizer.pipeline.model_evaluation import ModelEvaluationTrainingPipeline
+
+try:
+   logger.info(f"\n\n>>>>>> DATA EVALUATION STARTED <<<<<<\n\n") 
+   model_evaluation = ModelEvaluationTrainingPipeline()
+   model_evaluation.main()
+   logger.info(f"\n\n>>>>>> DATA EVALUATION COMPLETED <<<<<<\n\n")
+except Exception as e:
+        logger.exception(e)
+        raise e
